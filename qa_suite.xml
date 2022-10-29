@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PUP UI Automation Suite Run - QA Env" parallel="classes" thread-count="1" verbose="1">
+
+    <parameter name="env" value="qa" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="grid" value="1" />
+`
+    <test name="Test Login">
+        <classes>
+            <class name="LoginTest" />
+        </classes>
+    </test>
+<!--    <test name="Test Appointment Page">-->
+<!--        <classes>-->
+<!--            <class name="com.synergenhealth.pup.appointmentPage.AppointmentPageTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Test Transaction Page">-->
+<!--        <classes>-->
+<!--            <class name="com.synergenhealth.pup.transactionsPage.TransactionsPageTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Test Reports page">-->
+<!--        <classes>-->
+<!--            <class name="com.synergenhealth.pup.reportsPage.ReportsPageTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
