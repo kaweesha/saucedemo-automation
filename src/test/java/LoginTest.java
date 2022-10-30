@@ -20,7 +20,7 @@ public class LoginTest extends Base {
     public void testSuccessLogin() {
         this.loginPage.loginToSystem("standard_user", "secret_sauce");
         String pageCategory = this.homePage.getPageCategory().getText();
-        System.out.println("testing over");
+        System.out.println("testing finished");
         Assert.assertEquals(pageCategory, "PRODUCTS");
     }
 
